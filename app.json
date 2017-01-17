@@ -1,0 +1,10 @@
+{
+  "name": "Tutorship",
+  "description": "An Interactive Programming Tutorials Platform",
+  "repository": "https://github.com/tutorship/app",
+  "keywords": [
+    "angular2",
+    "express",
+    "node"
+  ]
+}
