@@ -1,6 +1,6 @@
 import { TutorshipPage } from './app.po';
 
-describe('tutorship App', function() {
+describe('tutorship App', function () {
   let page: TutorshipPage;
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('tutorship App', function() {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('App works!');
   });
 });

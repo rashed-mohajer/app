@@ -1,31 +1,78 @@
-# Tutorship
+![Tutorship logo](./src/assets/banner.png)
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
+## Introduction
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Tutorship is meant to be flexible, easy to use, interactive programming tutorials platform.
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Tutorship depends on the following software:
 
-## Build
+- Nodejs ( 6.x )
+- Angular 2 ( 2.x )
+- ExpressJS ( 4.x - with compression )
+- Webpack ( angular-cli )
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Clone this repository
 
-## Running end-to-end tests
+```bash
+$ git clone https://github.com/tutorship/app.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+- Install dependencies
 
-## Deploying to GitHub Pages
+```bash
+$ cd app
+$ npm install
+```
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+- Run development server
 
-## Further help
+```bash
+$ npm start
+```
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Alternatively, you can run production server
+
+```bash
+$ npm run build
+$ node dist/bin/www.js
+```
+
+## Deployment
+
+### Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tutorship/app/tree/master)
+
+### Docker
+
+You'll need at least Docker 1.12.
+
+If you don't already have it installed, follow the instructions for your OS:
+
+- On Mac OS X, you'll need [Docker for Mac](https://docs.docker.com/engine/installation/mac/)
+- On Windows, you'll need [Docker for Windows](https://docs.docker.com/engine/installation/windows/)
+- On Linux, you'll need [docker-engine](https://docs.docker.com/engine/installation/)
+
+#### Build your image
+
+```bash
+$ docker build -t <your-name/your-image-name> .
+```
+
+#### Test your image
+
+```bash
+$ docker run -p <port>:3000 <your-name/your-image-name>
+```
+
+If everything went OK, then open the browser and visit http://localhost:<port>
+
+
+## Licence
+
+Tutorship is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
